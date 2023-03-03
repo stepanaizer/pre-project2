@@ -19,7 +19,7 @@ public class MainApp {
       Car car1 = new Car("BMW", 520);
       Car car2 = new Car("Toyota", 777);
       Car car3 = new Car("Lada", 2112);
-      Car car4 = new Car("BMW", 520);
+      Car car4 = new Car("Nissan", 350);
 
       userService.add(new User("User1", "Lastname1", "user1@mail.ru", car1));
       userService.add(new User("User2", "Lastname2", "user2@mail.ru", car2));
@@ -36,7 +36,7 @@ public class MainApp {
          System.out.println();
       }
 
-      System.out.println(userService.getUsers("BMW", 520));
+      System.out.println(userService.getUser("Nissan", 350));
 
       context.close();
    }
